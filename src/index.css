@@ -1,0 +1,45 @@
+@font-face {
+  font-family: 'MonoRegular';
+  src: local('MonoRegular'), url("./assets/fonts/MonoRegular.woff2") format('woff');
+}
+
+@font-face {
+  font-family: 'MSBee';
+  src: local("MSBee"), url("./assets/fonts/MSBee-Regular.woff2") format('woff');
+}
+
+:root {
+  --primary-text: whitesmoke;
+  --secondary-text: #df6a86;
+}
+
+strong {
+  color: var(--secondary-text);
+}
+
+body {
+  margin: 0;
+  font-family: "MonoRegular" !important;
+  background: linear-gradient(-45deg, rgb(12, 1, 22), rgb(15, 0, 15), rgb(15, 4, 10), rgb(6, 1, 22));
+  background-size: 400% 400%;
+  animation: gradient 4s ease infinite;
+  color: var(--primary-text) !important;
+  /* background-image: linear-gradient(to bottom right, rgb(13, 3, 20), rgb(23, 9, 36)); */
+  /* background-attachment: fixed; */
+}
+
+.react-reveal {
+  animation-fill-mode: backwards !important;
+}
+
+@keyframes gradient {
+  0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}

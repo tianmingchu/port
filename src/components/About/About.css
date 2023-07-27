@@ -1,0 +1,105 @@
+:root {
+  --orange: #ff5f05;
+  --blue: #236ecf;
+}
+
+.about-container {
+  padding-top: 12rem;
+  max-width: 1140px !important;
+}
+
+/* About Header */
+.about-header {
+  font-family: "MonoRegular";
+  line-height: 3rem !important;
+}
+
+.picture {
+  object-fit: contain;
+}
+
+.golden {
+  position: relative;
+  display: inline-block;
+  width: 40%;
+  text-align: center;
+  margin-left: 1rem;
+  z-index: -1;
+}
+
+.golden .sf {
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.gg {
+  width: 200px;
+  height: 50px;
+  opacity: 30%;
+  animation: ocean 5s ease-in-out infinite;
+}
+
+.swe {
+  font-size: 1em;
+  position: relative;
+  z-index: -1;
+}
+.swe::after {
+  border-bottom: 8px solid #c54e6acc;
+  content: "";
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 65%;
+  z-index: -2;
+  border-radius: 10px;
+}
+
+.cap {
+  width: 150px;
+  margin-bottom: 15px;
+}
+
+@keyframes ocean {
+  0% {
+    transform: skew(10deg,1deg);
+  }
+  50% {
+    transform: skew(-10deg,-1deg);
+  }
+  100% {
+    transform: skew(10deg,1deg);
+  }
+}
+
+@media (max-width: 767px) {
+  .about-header {
+    text-align: center;
+  }
+
+  .golden {
+    margin-right: 4rem;
+  }
+}
+
+/* About Body */
+.about-body {
+  margin-bottom: 1rem !important;
+  line-height: 2rem !important;
+  font-family: "MSBee";
+}
+
+.activity {
+  width: 25px;
+}
+
+/* video */
+.vid {
+  /* width: 10% !important; */
+}
+
+.vid video {
+  /* width: 320px;
+  height: 240px; */
+}

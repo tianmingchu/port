@@ -1,0 +1,79 @@
+:root {
+  --typewriter: rgb(99, 161, 233);
+  --typewriter-2: rgb(31, 145, 40);
+}
+
+.home-container {
+  padding-top: 14rem;
+  margin-right: auto;
+  margin-left: auto;
+  width: 100%;
+}
+
+.header-1 {
+  color: blanchedalmond;
+  font-size: 5rem;
+  position: relative;
+  z-index: -2;
+}
+
+.header-1:after {
+  content: '';
+  position: absolute;
+  top: 92%;
+  width: 38%;
+  aspect-ratio: 3 / 1;
+  left: 50%;
+  transform: translate(-50%, 0);
+  border-radius: 50%;
+  border: 6px solid var(--typewriter-2);
+  --spread: 140deg;
+  --start: 290deg;
+  mask: conic-gradient(from var(--start), white 0 var(--spread), transparent var(--spread));
+}
+
+.exclaim {
+  color: var(--typewriter);
+}
+
+.header-2 {
+  font-size: 2.5rem;
+  margin: 2rem 0 2.5rem 4rem;
+  color: var(--primary-text);
+}
+
+.Typewriter__wrapper, .Typewriter__cursor {
+  font-size: 2rem;
+  margin-left: 4rem;
+  color: var(--typewriter);
+  animation: blinkingCursor 1s infinite !important;
+}
+
+@keyframes blinkingCursor {
+  0% { opacity:0 !important }
+  50%{ opacity:0.5 !important }
+  100%{ opacity:0 !important }
+}
+
+.social, .social-disable {
+  margin: 5rem 0 0 1rem;
+}
+
+.social-disable {
+  z-index: -1;
+}
+
+.social-container {
+  padding-left: 3rem
+}
+
+@media (max-width: 486px) {
+  .header-2, .Typewriter__wrapper, .Typewriter__cursor {
+    font-size: 2rem;
+    margin-left: 3rem;
+  }
+
+  .social-container {
+    padding-left: 0;
+  }
+}
