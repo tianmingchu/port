@@ -7,6 +7,9 @@ import {
 } from "react-router-dom"
 import Home from "./components/Home/Home"
 import About from "./components/About/About"
+import Experience from "./components/Experience/Experience"
+import Projects from "./components/Projects/Projects"
+import Resume from "./components/Resume/Resume"
 import NavB from "./components/Nav/Nav"
 import Footer from "./components/Footer/Footer"
 import { CursorProvider } from "react-cursor-custom"
@@ -28,6 +31,9 @@ function App() {
           <Routes>
             <Route path="/" element={<Home expand={expand} />} />
             <Route path="/about" element={<About />} />
+            <Route path="/experience" element={<Experience />} />
+            <Route path="/projects" element={<Projects />} />
+            <Route path="/resume" element={<Resume />} />
             {/* <Route path="*" element={<Navigate to="/" />} /> */}
           </Routes>
           {/* <Footer /> */}

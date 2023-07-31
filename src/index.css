@@ -13,7 +13,7 @@
   --secondary-text: #df6a86;
 }
 
-strong {
+.pink {
   color: var(--secondary-text);
 }
 

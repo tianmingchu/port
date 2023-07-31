@@ -1,0 +1,31 @@
+.experience-container {
+  padding-top: 10rem;
+}
+
+.c1, .ameren {
+  margin: auto;
+  display: block;
+  width: 235px;
+}
+
+.youtube {
+  width: 100%;
+  height: 275px;
+  margin: auto;
+  display: block;
+}
+
+.right-body h2, .right-body h4 {
+  text-align: right;
+}
+
+.experience-container p {
+  margin-top: 1rem;
+  font-family: "MSBee";
+  line-height: 2rem;
+  text-align: center;
+}
+
+.right-body span {
+  font-style: italic;
+}

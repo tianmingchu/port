@@ -4,8 +4,7 @@
 }
 
 .about-container {
-  padding-top: 12rem;
-  max-width: 1140px !important;
+  padding-top: 11rem;
 }
 
 /* About Header */
@@ -96,10 +95,11 @@
 
 /* video */
 .vid {
-  /* width: 10% !important; */
+  width: 100%;
+  margin-bottom: -0.4rem;
+  margin-left: 0.5rem;
 }
 
-.vid video {
-  /* width: 320px;
-  height: 240px; */
+.vid-row {
+  padding: 0 !important;
 }

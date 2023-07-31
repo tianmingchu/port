@@ -16,7 +16,7 @@ const Home = (props) => {
         <Row>
           <Col md={6}>
             <h1 className="text-center mb-5 header-1">Hi<span className='exclaim'>!</span></h1>
-            <h2 className="header-2">I'm <strong>Tianming Chu</strong></h2>
+            <h2 className="header-2">I'm <strong className="pink">Tianming Chu</strong></h2>
             {/* My passion is developing software that improves the quality of life of others */}
             <Typewriter 
               options={{
