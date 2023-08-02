@@ -38,7 +38,7 @@ const About = () => {
                 </div>
               </div>
               <p className="h2 about-header">
-                I'm currently working as a <span className="swe">Software Engineer</span> for <img src={cap1} className="cap" alt="capitalOne" /> in downtown SF.
+                I'm currently working as a <span className="swe">Software&nbsp;Engineer</span> for <img src={cap1} className="cap" alt="capitalOne" /> in downtown SF.
               </p>
               <br />
               <p className="about-body">

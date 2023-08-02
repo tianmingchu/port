@@ -1,0 +1,29 @@
+[{
+  "title":"4rcade",
+  "vid":false,
+  "src":"4rcade.gif",
+  "icon":"opensea.svg",
+  "link":"https://opensea.io/collection/4rcade",
+  "body":"Wanting to create an innovative NFT collection, I curated open source games to develop a collection of 99 playable NFTs, all 1/1s, all free. Within two hours the floor price rose to 0.33 ETH."
+},{
+  "title":"Platformer",
+  "vid":true,
+  "src":"platformer.mp4",
+  "icon":"docs.svg",
+  "link":"https://docs.google.com/document/d/10D8Qbe6_Pd42BBHCVxyY-mdFDHRxQvn3a5uBHRjHRz4/edit?usp=sharing",
+  "body":"I used SystemVerilog on an FPGA to create a platformer that uses a system on chip to interface with an external keyboard and displays graphics to a monitor using a custom VGA controller."
+},{
+  "title":"Roadtripper",
+  "vid":true,
+  "src":"covid.mp4",
+  "icon":"github.svg",
+  "link":"https://github.com/tianmingchu/travel",
+  "body":"Using the latest COVID data, this tool turns the United States into a weighted graph, allowing it to perform algorithms to map the “safest” path from one state to another."
+},{
+  "title":"TxSender",
+  "vid":false,
+  "src":"wallets.png",
+  "icon":"github.svg",
+  "link":"https://github.com/tianmingchu/txSender",
+  "body":"This tool utilizes a private Alchemy RPC to seamlessly send raw transaction data with customizable gas settings from any number of wallets to the Ethereum blockchain."
+}]

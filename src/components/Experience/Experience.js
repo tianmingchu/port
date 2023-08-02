@@ -11,7 +11,7 @@ const Experience = () => {
     <Container className="experience-container">
       <Particle />
       <Flip bottom duration={1000}>
-        <img src={cap1} className="c1 mb-4" alt="capitalOne" />
+        <img src={cap1} className="c1 mb-3" alt="capitalOne" />
       </Flip>
       <Row className="pb-2">
         <Col md={5}>
@@ -38,7 +38,7 @@ const Experience = () => {
         <img src={ameren} className="ameren mt-5 pt-5 mb-4" alt="ameren" />
       </Flip>
       <Row>
-        <Col className="left-body d-flex align-items-center" md={7}>
+        <Col className="left-body d-flex align-items-center" md={{span: 7, order: "first"}} xs={{order: 2}}>
           <LightSpeed left duration={1500}>
             <div>
               <h2><strong>Ameren.com</strong></h2>
@@ -48,7 +48,7 @@ const Experience = () => {
             </div>
           </LightSpeed>
         </Col>
-        <Col md={5}>
+        <Col md={{span: 5, order: "last"}} xs={{order: 1}}>
           <Bounce right duration={1500}>
             <iframe allowFullScreen="allowFullScreen"
               mozallowfullscreen="mozallowfullscreen" 
@@ -73,7 +73,7 @@ const Experience = () => {
             <div>
               <h2><strong>APImaging</strong></h2>
               <h4 className="pink">Automation</h4>
-              <p>Every month the Finance team undergoes their accrual process by downloading numerous financial documents. By using Blue Prism RPA to automate this process I helped save the Finance team over 2500 hours annually, enabling them to spend the time saved performing analysis and making better business decisions.
+              <p>Every month the Finance team undergoes their accrual process by downloading numerous financial documents. By using Blue Prism RPA to automate this process I helped save the Finance team over 2000 hours of manual labor annually, enabling them to spend the time saved performing analysis and making better business decisions.
               </p>
             </div>
           </LightSpeed>

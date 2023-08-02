@@ -5,7 +5,7 @@ import { Fade } from "react-reveal"
 import { Container } from "react-bootstrap"
 import { Row, Col } from "react-bootstrap"
 import { SocialIcon } from "react-social-icons"
-import ethLogo from "../../assets/ethLogo.gif"
+import ethLogo from "../../assets/home/ethLogo.gif"
 import "./Home.css"
 
 const Home = (props) => {

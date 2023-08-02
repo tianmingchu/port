@@ -1,0 +1,84 @@
+.card {
+  width: 100%;
+  height: var(--card-height) !important;
+  z-index: 0;
+  background: none !important;
+}
+
+.card-wrapper {
+  background-color: var(--card-color);
+  border-radius: var(--border-rad);
+  border: 5px solid black;
+  height: var(--card-height);
+  z-index: -2;
+}
+
+.card-wrapper h2 {
+  color: var(--header-color);
+}
+
+.card-wrapper p {
+  color: var(--body-color);
+  font-family: "MSBee";
+}
+
+.cardImg {
+  width: 100%;
+  border-radius: var(--img-rad) var(--img-rad) 0 0;
+  height: 280px;
+  margin-top: -0.1rem;
+  object-fit: cover;
+}
+
+.card-icon:hover {
+  opacity: 80%;
+  transition: all 0.25s;
+}
+
+.img-body {
+  padding: 1.3rem 1rem 0rem 1.5rem;
+}
+
+.vid-body {
+  padding: 1rem 1rem 0rem 1.5rem;
+}
+
+.card:hover {
+  --expand: 1;
+}
+  
+.card:after {
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: var(--mid-color);
+  border: 5px solid black;
+  border-radius: var(--border-rad);
+  top: 0;
+  left: 0;
+  z-index: -3;
+}
+
+.card:before {
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: var(--back-color);
+  border: 5px solid black;
+  border-radius: var(--border-rad);
+  top: 0;
+  left: 0;
+  z-index: -3;
+}
+  
+.card:after {
+  transform: translate(calc(var(--expand) * -2%), calc(var(--expand) * -2%));
+  transition: transform 0.2s;
+}
+
+.card-wrapper {
+  transition: transform 0.2s;
+  transform: translate(calc(var(--expand) * -4%), calc(var(--expand) * -4%));
+}
