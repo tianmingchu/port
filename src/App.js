@@ -13,7 +13,7 @@ import Resume from "./components/Resume/Resume"
 import NavB from "./components/Nav/Nav"
 import Top from "./components/Top"
 import Footer from "./components/Footer/Footer"
-import { CursorProvider } from "react-cursor-custom"
+// import { CursorProvider } from "react-cursor-custom"
 import './App.css'
 import "bootstrap/dist/css/bootstrap.min.css"
 
