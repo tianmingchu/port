@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Particle from "../Particle"
 import { Container, Row, Col } from "react-bootstrap"
 import { Flip, Bounce, LightSpeed } from "react-reveal"
@@ -7,7 +7,7 @@ import ameren from "../../assets/experience/ameren.svg"
 import "./Experience.css"
 
 const Experience = () => {
-  window.onload = () => {
+  useEffect(() => {
     const cursor = document.getElementById("cursorWrapper")
     const frame = document.getElementsByClassName("youtube")
     if (frame) {
@@ -16,7 +16,7 @@ const Experience = () => {
         frame[i].addEventListener("mouseleave", () => { cursor.style.display = "block"; })
       }
     }
-  }
+  })
 
   return (
     <Container className="experience-container">

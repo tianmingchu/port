@@ -23,7 +23,19 @@ function App() {
   return (
     <Router>
       <div id="cursorWrapper">
-        <AnimatedCursor />
+        <AnimatedCursor
+          innerSize={8}
+          outerSize={25}
+          outerAlpha={0}
+          innerScale={0.7}
+          outerScale={1.4}
+          outerStyle={{
+            border: '2px solid var(--cursor-outer)'
+          }}
+          innerStyle={{
+            backgroundColor: "var(--cursor-inner)"
+          }}
+        />
       </div>
         {/* <div className="app"> */}
           <NavB expand={expand} updateExpand={updateExpand} />

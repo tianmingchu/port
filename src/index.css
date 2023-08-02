@@ -11,6 +11,10 @@
 :root {
   --primary-text: whitesmoke;
   --secondary-text: #df6a86;
+  --cursor-inner: yellow;
+  --cursor-outer: #eee48b;
+  --cursor-inner1: yellowgreen;
+  --cursor-outer1: #52632f;
 }
 
 .pink {
