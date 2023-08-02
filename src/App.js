@@ -13,7 +13,7 @@ import Resume from "./components/Resume/Resume"
 import NavB from "./components/Nav/Nav"
 import Top from "./components/Top"
 import Footer from "./components/Footer/Footer"
-// import { CursorProvider } from "react-cursor-custom"
+import AnimatedCursor from "react-animated-cursor"
 import './App.css'
 import "bootstrap/dist/css/bootstrap.min.css"
 
@@ -22,11 +22,9 @@ function App() {
 
   return (
     <Router>
-      {/* <CursorProvider
-        color={"#8f8b81"}
-        ringSize={25}
-        transitionTime={75}
-      > */}
+      <div id="cursorWrapper">
+        <AnimatedCursor />
+      </div>
         {/* <div className="app"> */}
           <NavB expand={expand} updateExpand={updateExpand} />
           <Top />
@@ -40,7 +38,6 @@ function App() {
           </Routes>
           {/* <Footer /> */}
         {/* </div> */}
-      {/* </CursorProvider> */}
     </Router>
   );
 }

@@ -29,3 +29,7 @@
 .right-body span {
   font-style: italic;
 }
+
+.cursor-wrapper {
+  /* display: none; */
+}

@@ -7,6 +7,17 @@ import ameren from "../../assets/experience/ameren.svg"
 import "./Experience.css"
 
 const Experience = () => {
+  window.onload = () => {
+    const cursor = document.getElementById("cursorWrapper")
+    const frame = document.getElementsByClassName("youtube")
+    if (frame) {
+      for (var i = 0; i < frame.length; i++) {
+        frame[i].addEventListener("mouseover", () => { cursor.style.display = "none"; });
+        frame[i].addEventListener("mouseleave", () => { cursor.style.display = "block"; })
+      }
+    }
+  }
+
   return (
     <Container className="experience-container">
       <Particle />
