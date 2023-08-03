@@ -1,6 +1,7 @@
 import React from 'react'
 import { Row, Col, Container } from "react-bootstrap"
 import { Roll, Slide, Fade } from "react-reveal"
+import Footer from "../Footer/Footer"
 import gradCropped from "../../assets/about/gradCropped.png"
 import Particle from "../Particle"
 import goldenGate from "../../assets/about/goldenGate.png"
@@ -54,7 +55,7 @@ const About = () => {
           </Col>
         </Row>
       </Container>
-      <Row className='mt-5 pt-5'>
+      <Row className='vid-section'>
           <Col md={6} className="vid-row">
             <Fade left duration={1500} distance="50px">
               <video loop autoPlay muted controls className="vid">
@@ -76,6 +77,7 @@ const About = () => {
             </Fade>
           </Col>
       </Row>
+      <Footer />
     </>
   )
 }

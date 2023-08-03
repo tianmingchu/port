@@ -46,7 +46,6 @@
   font-size: 2rem;
   margin-left: 4rem;
   color: var(--typewriter);
-  animation: blinkingCursor 1s infinite !important;
 }
 
 @keyframes blinkingCursor {

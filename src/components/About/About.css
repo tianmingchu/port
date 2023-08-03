@@ -20,10 +20,10 @@
 .golden {
   position: relative;
   display: inline-block;
-  width: 40%;
   text-align: center;
   margin-left: 1rem;
   z-index: -1;
+  width: 200px;
 }
 
 .golden .sf {
@@ -37,6 +37,7 @@
   height: 50px;
   opacity: 30%;
   animation: ocean 5s ease-in-out infinite;
+  margin-left: 1.5rem;
 }
 
 .swe {
@@ -60,6 +61,11 @@
   margin-bottom: 15px;
 }
 
+.vid-section {
+  margin-top: 5.5rem !important;
+  margin-bottom: 4rem;
+}
+
 @keyframes ocean {
   0% {
     transform: skew(10deg,1deg);
@@ -73,12 +79,39 @@
 }
 
 @media (max-width: 767px) {
-  .about-header {
+  .about-header, .about-body {
     text-align: center;
+    margin-bottom: 0 !important;
   }
 
   .golden {
-    margin-right: 4rem;
+    margin-left: 1rem !important;
+  }
+
+  .gg {
+    margin-left: 0.5rem !important;
+    transform: scale(0.85) !important;
+  }
+
+  .picture {
+    margin-bottom: 1rem;
+  }
+
+  .vid-section {
+    margin-top: 3rem !important;
+  }
+}
+
+@media (max-width: 467px) {
+  .golden {
+    margin-left: 0 !important;
+    margin: auto;
+  }
+}
+
+@media (max-width: 991px) {
+  .golden {
+    margin-left: 0;
   }
 }
 

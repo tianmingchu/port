@@ -6,6 +6,7 @@
   margin: auto;
   display: block;
   width: 235px;
+  margin-bottom: 1.5rem !important;
 }
 
 .youtube {
@@ -29,3 +30,29 @@
 .right-body span {
   font-style: italic;
 }
+
+.bottom-row {
+  margin-top: 5rem !important;
+}
+
+@media (max-width: 991px) {
+  .youtube {
+    height: 100%;
+  }
+}
+
+@media (max-width: 767px) {
+  .youtube {
+    height: 275px;
+    margin-bottom: 1rem;
+  }
+
+  .right-body h2, .left-body h2, .right-body h4, .left-body h4 {
+    text-align: center;
+  }
+
+  .bottom-row {
+    margin-top: 4rem !important;
+  }
+}
+

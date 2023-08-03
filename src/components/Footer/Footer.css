@@ -1,0 +1,26 @@
+.foot {
+  width: 100%;
+  margin-top: auto;
+  text-align: center;
+  background: linear-gradient(-45deg, rgb(92, 47, 92), rgb(136, 5, 136), rgb(58, 31, 134), rgb(117, 39, 85));
+  animation: footer 10s ease infinite;
+  background-size: 400% 400%;
+}
+
+@keyframes footer {
+  0% {
+		background-position: left;
+	}
+	25% {
+		background-position: center;
+	}
+	50% {
+		background-position: right;
+	}
+  75% {
+		background-position: center;
+	}
+  100% {
+		background-position: left;
+	}
+}

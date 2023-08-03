@@ -11,6 +11,10 @@
   padding-top: 10rem;
 }
 
+.projects-row {
+  margin-bottom: 7rem !important;
+}
+
 .card-container {
   width: 80%;
 }
@@ -40,6 +44,14 @@
     width: 80%;
   }
   .proj-header::after {
-    display: none;
+    top: 100%;
+  }
+
+  .card-container {
+    margin-bottom: 2rem;
+  }
+
+  .projects-row {
+    margin-bottom: 0 !important;
   }
 }

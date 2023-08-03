@@ -1,0 +1,9 @@
+.resume-container {
+  padding-top: 6rem;
+}
+
+@media (max-width: 767px) {
+  object {
+    height: 85vh;
+  }
+}

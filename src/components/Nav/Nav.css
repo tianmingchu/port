@@ -51,6 +51,10 @@
   background: linear-gradient( to right, var(--nav-left), var(--nav-right));
 }
 
+.curr-tab {
+  /* opacity: 60%; */
+}
+
 /* Toggler animation */
 .navbar-toggler {
   width: 48px;

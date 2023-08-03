@@ -28,12 +28,33 @@ body {
   background-size: 400% 400%;
   animation: gradient 4s ease infinite;
   color: var(--primary-text) !important;
+  overflow-y: scroll;
+  overflow-x: hidden;
   /* background-image: linear-gradient(to bottom right, rgb(13, 3, 20), rgb(23, 9, 36)); */
   /* background-attachment: fixed; */
 }
 
+body::-webkit-scrollbar {
+  width: 10px;
+}
+
+body::-webkit-scrollbar-track {
+  background: linear-gradient(-45deg, rgb(12, 1, 22), rgb(15, 0, 15), rgb(15, 4, 10), rgb(6, 1, 22));
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #5a5547;
+  border-radius: 20px;
+}
+
 .react-reveal {
   animation-fill-mode: backwards !important;
+}
+
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 @keyframes gradient {
