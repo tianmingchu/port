@@ -28,6 +28,7 @@
   font-weight: 600;
   text-align: center;
 }
+
 .proj-header::after {
   border-bottom: 8px solid var(--mid-color);
   content: "";
@@ -45,6 +46,7 @@
   }
   .proj-header::after {
     top: 100%;
+    transform: scaleX(0.8);
   }
 
   .card-container {

@@ -19,7 +19,7 @@ function App() {
   return (
     <Router>
       <div id="cursorWrapper">
-        {/* <AnimatedCursor
+        <AnimatedCursor
           innerSize={8}
           outerSize={25}
           outerAlpha={0}
@@ -31,7 +31,7 @@ function App() {
           innerStyle={{
             backgroundColor: "var(--cursor-inner)"
           }}
-        /> */}
+        />
       </div>
         <div className="app">
           <NavB />
