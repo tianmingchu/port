@@ -40,7 +40,7 @@ const Home = () => {
                 <span></span>
                 <span></span>
                 <span></span>
-                <FaGithub style={{marginBottom: "4px"}} />
+                <FaGithub className="social-icon" />
               </a>
             </li>
             <li>
@@ -49,7 +49,7 @@ const Home = () => {
                 <span></span>
                 <span></span>
                 <span></span>
-                <FaTwitter style={{marginBottom: "4px"}} />
+                <FaTwitter className="social-icon" />
               </a>
             </li>
             <li>
@@ -58,7 +58,7 @@ const Home = () => {
                 <span></span>
                 <span></span>
                 <span></span>
-                <FaGooglePlusG style={{marginBottom: "4px", transform: "scale(1.2)"}} />
+                <FaGooglePlusG className="social-icon" style={{transform: "scale(1.3)"}} />
               </a>
             </li>
             <li>
@@ -67,7 +67,7 @@ const Home = () => {
                 <span></span>
                 <span></span>
                 <span></span>
-                <FaInstagram style={{marginBottom: "4px"}} />
+                <FaInstagram className="social-icon" />
               </a>
             </li>
             <li>
@@ -76,7 +76,7 @@ const Home = () => {
                 <span></span>
                 <span></span>
                 <span></span>
-                <FaLinkedin style={{marginBottom: "4px"}} />
+                <FaLinkedin className="social-icon" />
               </a>
             </li>
           </ul>
