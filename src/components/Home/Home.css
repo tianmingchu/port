@@ -28,13 +28,13 @@
   font-size: 5rem;
   font-family: "Inter";
   text-shadow: -5px 8px var(--shadow);
-  top: 25%;
+  top: 20%;
   -webkit-text-stroke: 1px var(--outline);
 }
 
 .Typewriter {
   position: absolute;
-  top: 60%;
+  top: 55%;
   font-size: 3rem;
   color: var(--typewriter);
   -webkit-text-stroke: 0.2px var(--outline);
