@@ -1,78 +1,230 @@
 :root {
-  --typewriter: rgb(99, 161, 233);
-  --typewriter-2: rgb(31, 145, 40);
+  --outline: rgb(99, 161, 233);
+  --typewriter: #DE7F3B;
+  --name: #cbff0f;
+  --shadow: #6d0b4c;
+  --icon-size: 50px;
+  --icon-color: #9dc0e4;
 }
 
 .home-container {
-  padding-top: 14rem;
-  margin-right: auto;
-  margin-left: auto;
-  width: 100%;
+  padding-top: 12rem;
 }
 
-.header-1 {
-  color: blanchedalmond;
-  font-size: 5rem;
-  position: relative;
-  z-index: -2;
-}
-
-.header-1:after {
-  content: '';
-  position: absolute;
-  top: 92%;
-  width: 38%;
-  aspect-ratio: 3 / 1;
-  left: 50%;
-  transform: translate(-50%, 0);
-  border-radius: 50%;
-  border: 6px solid var(--typewriter-2);
-  --spread: 140deg;
-  --start: 290deg;
-  mask: conic-gradient(from var(--start), white 0 var(--spread), transparent var(--spread));
-}
-
-.exclaim {
-  color: var(--typewriter);
-}
-
-.header-2 {
-  font-size: 2.5rem;
-  margin: 2rem 0 2.5rem 4rem;
-  color: var(--primary-text);
-}
-
-.Typewriter__wrapper, .Typewriter__cursor {
-  font-size: 2rem;
-  margin-left: 4rem;
-  color: var(--typewriter);
-}
-
-@keyframes blinkingCursor {
-  0% { opacity:0 !important }
-  50%{ opacity:0.5 !important }
-  100%{ opacity:0 !important }
-}
-
-.social, .social-disable {
-  margin: 5rem 0 0 1rem;
-}
-
-.social-disable {
+.eth-logo {
+  transform: scale(1.6);
   z-index: -1;
 }
 
-.social-container {
-  padding-left: 3rem
+.home-wrapper {
+  position: relative;
+  z-index: -1;
+  width: 100%;
 }
 
-@media (max-width: 486px) {
-  .header-2, .Typewriter__wrapper, .Typewriter__cursor {
-    font-size: 2rem;
-    margin-left: 3rem;
+.name {
+  color: var(--name);
+  position: absolute;
+  font-size: 5rem;
+  font-family: "Inter";
+  text-shadow: -5px 8px var(--shadow);
+  top: 25%;
+  -webkit-text-stroke: 1px var(--outline);
+}
+
+.Typewriter {
+  position: absolute;
+  top: 60%;
+  font-size: 3rem;
+  color: var(--typewriter);
+  -webkit-text-stroke: 0.2px var(--outline);
+  font-family: "MSBee";
+  margin-left: 4rem;
+}
+
+/* socials */
+/* .social-wrapper {
+  background-color: #12345655;
+  width: 410px;
+  height: 80px;
+  float: right;
+  border-radius: 10px;
+  margin-top: 4.5rem;
+} */
+
+ul {
+  display:flex;
+  float: right;
+  margin-top: 5rem !important;
+  /* margin: 1rem 1.2rem 0 0 !important; */
+}
+
+ul li {
+  list-style:none;
+}
+ul li a {
+  display:block;
+  position:relative;
+  width:var(--icon-size);
+  height:var(--icon-size);
+  line-height:var(--icon-size);
+  font-size:25px;
+  text-align:center;
+  text-decoration:none;
+  color: var(--icon-color);
+  margin-left: 30px;
+  transition:0.5s;
+}
+ul li a span {
+  position:absolute;
+  transition: transform .5s;
+}
+ul li a span:nth-child(1),
+ul li a span:nth-child(3){
+  width:100%;
+  height:3px;
+  background: var(--icon-color);
+  border-radius: 20px;
+}
+ul li a span:nth-child(1) {
+  top:0;
+  left:0;
+  transform-origin: right;
+}
+ul li a:hover span:nth-child(1) {
+  transform: scaleX(0);
+  transform-origin: left;
+  transition:transform .5s;
+}
+
+ul li a span:nth-child(3) {
+  bottom:0;
+  left:0;
+  transform-origin: left;
+}
+ul li a:hover span:nth-child(3) {
+  transform: scaleX(0);
+  transform-origin: right;
+  transition:transform .5s;
+}
+
+ul li a span:nth-child(2),
+ul li a span:nth-child(4){
+  width:3px;
+  height:100%;
+  background: var(--icon-color);
+}
+ul li a span:nth-child(2) {
+  top:0;
+  left:0;
+  transform:scale(0);
+  transform-origin: bottom;
+}
+ul li a:hover span:nth-child(2) {
+  transform: scale(1);
+  transform-origin: top;
+  transition:transform .5s;
+}
+ul li a span:nth-child(4) {
+  top:0;
+  right:0;
+  transform:scale(0);
+  transform-origin: top;
+}
+ul li a:hover span:nth-child(4) {
+  transform: scale(1);
+  transform-origin: bottom;
+  transition:transform .5s;
+}
+
+.github:hover {
+  color: #f5f5f5;
+}
+.github:hover span { 
+  background: #f5f5f5;
+}
+.linkedin:hover {
+  color: #0077b5;
+}
+.linkedin:hover span { 
+  background: #0077b5;
+}
+.twitter:hover {
+  color: #1da1f2;
+}
+.twitter:hover span { 
+  background: #1da1f2;
+}
+.instagram:hover {
+  color: #c32aa3;
+}
+.instagram:hover span { 
+  background: #c32aa3;
+}
+.google:hover {
+  color: #dd4b39;
+}
+.google:hover span { 
+  background: #dd4b39;
+}
+
+@media (max-width: 767px) {
+  .home-container {
+    padding-top: 8rem;
   }
 
-  .social-container {
-    padding-left: 0;
+  .eth-logo {
+    transform: scale(1.1);
+  }
+
+  .name {
+    font-size: 4rem;
+    text-align: center;
+  }
+
+  .Typewriter {
+    font-size: 2rem;
+    margin: 4rem 0 0 3.3rem;
+  }
+
+  ul {
+    width: 100%;
+    padding: 0 !important;
+  }
+
+  ul li a {
+    --icon-size: 40px;
+    font-size: calc(var(--icon-size) / 2);
+  }
+
+  .github {
+    color: #f5f5f5;
+  }
+  .github span { 
+    background: #f5f5f5 !important;
+  }
+  .linkedin {
+    color: #0077b5;
+  }
+  .linkedin span { 
+    background: #0077b5 !important;
+  }
+  .twitter {
+    color: #1da1f2;
+  }
+  .twitter span { 
+    background: #1da1f2 !important;
+  }
+  .instagram {
+    color: #c32aa3;
+  }
+  .instagram span { 
+    background: #c32aa3 !important;
+  }
+  .google {
+    color: #dd4b39;
+  }
+  .google span { 
+    background: #dd4b39 !important;
   }
 }
