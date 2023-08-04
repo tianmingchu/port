@@ -170,7 +170,7 @@ ul li a:hover span:nth-child(4) {
 
 @media (max-width: 767px) {
   .home-container {
-    padding-top: 8rem;
+    padding-top: 6rem;
   }
 
   .eth-logo {
@@ -192,7 +192,7 @@ ul li a:hover span:nth-child(4) {
   ul {
     width: 100%;
     padding: 0 !important;
-    margin-right: 5px;
+    margin: 8rem 5px 0 0 !important;
   }
 
   ul li a {

@@ -11,6 +11,10 @@
   padding-top: 10rem;
 }
 
+.project-header {
+  margin-bottom: 1rem;
+}
+
 .projects-row {
   margin-bottom: 7rem !important;
 }
@@ -41,6 +45,14 @@
 }
 
 @media (max-width:991px) {
+  .projects-container {
+    padding-top: 8rem;
+  }
+
+  .project-header {
+    margin-bottom: 0;
+  }
+
   .proj-header {
     width: 80%;
   }

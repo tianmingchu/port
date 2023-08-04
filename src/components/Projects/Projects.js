@@ -12,7 +12,7 @@ const Projects = () => {
     <>
       <Container className="projects-container">
         <Particle />
-        <div className="d-flex justify-content-center mb-4">
+        <div className="d-flex justify-content-center project-header">
           <Fade top duration={1500} distance="30px">
             <span className="mb-5 proj-header">A few projects I've worked&nbsp;on</span>
           </Fade>
