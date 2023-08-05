@@ -153,6 +153,9 @@ ul li a:hover span:nth-child(4) {
 .linkedin:hover span { 
   background: #0077b5;
 }
+.x-wrapper {
+  margin-bottom: 5px;
+}
 .twitter:hover {
   /* color: #1da1f2; */
   .xxx {
@@ -240,7 +243,7 @@ ul li a:hover span:nth-child(4) {
   ul {
     width: 100%;
     padding: 0 !important;
-    margin: 8rem 8px 0 0 !important;
+    margin: 8rem 8px 2rem 0 !important;
   }
 
   ul li a {
@@ -259,6 +262,9 @@ ul li a:hover span:nth-child(4) {
   }
   .linkedin span { 
     background: #0077b5 !important;
+  }
+  .x-wrapper {
+    margin-bottom: 1px;
   }
   .twitter {
     /* color: #1da1f2; */
