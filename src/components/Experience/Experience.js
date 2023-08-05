@@ -5,20 +5,12 @@ import { Flip, Bounce, LightSpeed } from "react-reveal"
 import Footer from "../Footer/Footer"
 import cap1 from "../../assets/about/cap1.svg"
 import ameren from "../../assets/experience/ameren.svg"
+import ev from "../../assets/experience/ev.png"
+import mnav from "../../assets/experience/mnav.png"
+import voucher from "../../assets/experience/voucher.png"
 import "./Experience.css"
 
 const Experience = () => {
-  useEffect(() => {
-    const cursor = document.getElementById("cursorWrapper")
-    const frame = document.getElementsByClassName("youtube")
-    if (frame) {
-      for (var i = 0; i < frame.length; i++) {
-        frame[i].addEventListener("mouseover", () => { cursor.style.display = "none"; });
-        frame[i].addEventListener("mouseleave", () => { cursor.style.display = "block"; })
-      }
-    }
-  })
-
   return (
     <>
       <Container className="experience-container mb-5 pb-4">
@@ -29,11 +21,7 @@ const Experience = () => {
         <Row className="pb-2">
           <Col md={5}>
             <Bounce left duration={1500}>
-              <iframe allowFullScreen="allowFullScreen"
-                mozallowfullscreen="mozallowfullscreen" 
-                msallowfullscreen="msallowfullscreen" 
-                oallowfullscreen="oallowfullscreen" 
-                webkitallowfullscreen="webkitallowfullscreen" className="youtube" src="https://youtube.com/embed/bvF81K7Qcsc" />
+              <img src={mnav} alt="mNav" className="youtube" />
             </Bounce>
           </Col>
           <Col className="right-body d-flex align-items-center" md={7}>
@@ -63,22 +51,14 @@ const Experience = () => {
           </Col>
           <Col md={{span: 5, order: "last"}} xs={{order: 1}}>
             <Bounce right duration={1500}>
-              <iframe allowFullScreen="allowFullScreen"
-                mozallowfullscreen="mozallowfullscreen" 
-                msallowfullscreen="msallowfullscreen" 
-                oallowfullscreen="oallowfullscreen" 
-                webkitallowfullscreen="webkitallowfullscreen" className="youtube" src="https://youtube.com/embed/zHWAYPgVGoI" />
+              <img src={ev} alt="ev" className="youtube" />
             </Bounce>
           </Col>
         </Row>
         <Row className="bottom-row">
           <Col md={5}>
             <Bounce left duration={1500}>
-              <iframe allowFullScreen="allowFullScreen"
-                mozallowfullscreen="mozallowfullscreen" 
-                msallowfullscreen="msallowfullscreen" 
-                oallowfullscreen="oallowfullscreen" 
-                webkitallowfullscreen="webkitallowfullscreen" className="youtube" src="https://youtube.com/embed/Ypl5G1scz3g" />
+              <img src={voucher} alt="voucher" className="youtube" />
             </Bounce>
           </Col>
           <Col className="right-body d-flex align-items-center" md={7}>
