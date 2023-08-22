@@ -1,7 +1,7 @@
 import React from 'react'
 import Particle from "../Particle"
 import Typewriter from "typewriter-effect"
-import { Fade } from "react-reveal"
+import { Fade, LightSpeed } from "react-reveal"
 import { Container } from "react-bootstrap"
 import ethLogo from "../../assets/home/ethLogo.gif"
 import { FaTwitter, FaGithub, FaGooglePlusG, FaInstagram, FaLinkedin } from "react-icons/fa"
@@ -11,13 +11,17 @@ const Home = () => {
   return (
     <Container className="home-container">
       <Particle />
-      <Fade left duration={1000} distance="20px">
+      <Fade left duration={1000} distance="50px">
         <div className="home-wrapper">
-          <div className='d-flex justify-content-center'>
-            <img className="img-fluid eth-logo" src={ethLogo} alt="eth" />
-          </div>
-          <h2 className="name"><strong>Tianming Chu</strong></h2>
-          <Typewriter 
+          <LightSpeed right duration={1000} distance="50px">
+            <div className='d-flex justify-content-center'>
+              <img className="img-fluid eth-logo" src={ethLogo} alt="eth" />
+            </div>
+          </LightSpeed>
+          <Fade top duration={1000} distance="20px">
+            <h2 className="name"><strong>Tianming Chu</strong></h2>
+          </Fade>
+          <Typewriter
             options={{
               strings: [
                 "Developer",
@@ -27,11 +31,11 @@ const Home = () => {
               loop: true,
               deleteSpeed: 50,
               pauseFor: 2000,
-            }} 
+            }}
           />
         </div>
       </Fade>
-      <Fade right duration={1500} distance="25px">
+      <Fade bottom duration={1500} distance="25px">
         <div className="social-wrapper">
           <ul>
             <li>
@@ -52,11 +56,11 @@ const Home = () => {
                 {/* <FaTwitter className="social-icon" /> */}
                 <svg version="1.1" id="svg5" xmlnsSvg="http://www.w3.org/2000/svg"
                   xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1668.56 1221.19"
-                  style={{enableBackground:"new 0 0 1668.56 1221.19;", transform:"scale(0.75)"}} className="x-wrapper" xmlSpace="preserve">
-                <g id="layer1" transform="translate(52.390088,-25.058597)">
-                  <path className="xxx" fill="#9dc0e4" id="path1009" d="M283.94,167.31l386.39,516.64L281.5,1104h87.51l340.42-367.76L984.48,1104h297.8L874.15,558.3l361.92-390.99
+                  style={{ enableBackground: "new 0 0 1668.56 1221.19;", transform: "scale(0.75)" }} className="x-wrapper" xmlSpace="preserve">
+                  <g id="layer1" transform="translate(52.390088,-25.058597)">
+                    <path className="xxx" fill="#9dc0e4" id="path1009" d="M283.94,167.31l386.39,516.64L281.5,1104h87.51l340.42-367.76L984.48,1104h297.8L874.15,558.3l361.92-390.99
                     h-87.51l-313.51,338.7l-253.31-338.7H283.94z M412.63,231.77h136.81l604.13,807.76h-136.81L412.63,231.77z"/>
-                </g>
+                  </g>
                 </svg>
               </a>
             </li>
@@ -66,7 +70,7 @@ const Home = () => {
                 <span></span>
                 <span></span>
                 <span></span>
-                <FaGooglePlusG className="social-icon" style={{transform: "scale(1.3)"}} />
+                <FaGooglePlusG className="social-icon" style={{ transform: "scale(1.3)" }} />
               </a>
             </li>
             <li>
